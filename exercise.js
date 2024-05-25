@@ -1,16 +1,13 @@
 
-var student = {
-    name : "David Rayy",
-    sclass : "VI",
-    rollno : 12 
-};
-/* possible solution */
-const main = () => {
-    let myArr = [];
-    for(let props in student){
-        myArr.push(props);
-    }
-    console.log(myArr.toString());
+function capitalize(s , num){
+  let randomIndex = Math.floor(Math.random() * s.length);
+  if(num === 1){
+    return s.toUpperCase();
+  }else if(num === 2){
+    return s.substring(0, randomIndex) + s.charAt(randomIndex).toUpperCase() + s.substring(randomIndex + 1);
+  }else{
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
 }
 
-main();
+console.log(capitalize('sentence' , 2));

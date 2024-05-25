@@ -19,9 +19,17 @@ int main(){
     
      while(getline(inFile , input)){
         if(input.find('x') != string::npos){
-            l = stoi(input.substr(0 , input.find("x")+1));
-            w = stoi(input.substr(input.find("x")+1 , input.find("x")+1));
-            h = stoi(input.substr()); // still figure this one out 
+          size_t end = input.find("x");
+          int l = stoi(input.substr(0, end));
+          size_t start = input.find("x", start + 1);
+          end = input.find("x", start + 1);
+          int w = stoi(input.substr(start, end));
+          start = end + 1;
+          int h = stoi(input.substr(start));
         }
      }
+     
+     cout << l << endl;
+     cout << w << endl;
+     cout << h << endl;
 }
