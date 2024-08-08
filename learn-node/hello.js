@@ -33,7 +33,6 @@ const server = http.createServer(async (request, response) => {
 
   }else{
     throw new Error('Method not allowed...')
-
   }
  }catch(e){
   response.writeHead(200 , {'content-Type': 'text/plain'});
