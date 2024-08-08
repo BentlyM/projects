@@ -1,6 +1,7 @@
 {
-    "files.associations": {
-        "ostream": "cpp",
-        "string_view": "cpp"
-    }
+  "files.associations": {
+    "ostream": "cpp",
+    "string_view": "cpp"
+  },
+  "cSpell.words": ["LOGNAME"]
 }
