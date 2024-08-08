@@ -1,4 +1,5 @@
 //import fs from 'fs'
+// important file reading stuff is cool
 import fs from 'fs/promises'
 
 // fs.readFileSync('./learn-node/text.txt', 'utf8', (err , data) => {
