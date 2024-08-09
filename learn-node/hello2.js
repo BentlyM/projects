@@ -54,7 +54,7 @@ const createUserHandler = (req , res) => {
     req.on('end', ()=>{
         const newUser = JSON.parse(body);
         users.push(newUser);
-        res.statusCod = 201;
+        res.statusCode = 201;
         res.write(JSON.stringify({newUser}));
         res.end();
     })

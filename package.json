@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --env-file=.env --watch node-app/server.js"
+    "start": "node --env-file=.env --watch exercise.js"
   },
   "repository": {
     "type": "git",
