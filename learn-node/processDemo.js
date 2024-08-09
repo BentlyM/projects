@@ -7,6 +7,7 @@ console.log(process.argv[access])
 
 //process,env
 console.log(process.env.LOGNAME); // (process.env) used for system variables for example LOGNAME
+// printEnv has similar features
 
 console.log(process.pid);
 
