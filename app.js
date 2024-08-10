@@ -2,6 +2,8 @@ import express, { response } from 'express';
 import path from 'path';
 import url from 'url';
 import posts from './routes/post.js';
+import logger from './middleware/logger.js';
+import error from './middleware/error.js';
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,10 +16,15 @@ app.use(express.urlencoded({extended: false}))
 const PORT = process.env.PORT;
 const hostname = '127.0.0.1';
 
+// Logger middleware
+app.use(logger);
+
 // app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/api/posts', posts);
+logger*app.use('/api/posts', posts);
+
+app.use(errorHandler);
 
 
 app.listen(PORT, hostname, () => {
