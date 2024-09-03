@@ -11,3 +11,5 @@ SELECT * FROM something WHERE distinction
 DELETE FROM something WHERE condition
 
 SELECT SUM(distinction) FROM something 
+
+INSERT INTO something (some type of data) VALUES (some type of literal/variable pointing to data)
